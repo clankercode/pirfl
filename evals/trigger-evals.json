@@ -1,0 +1,18 @@
+{
+  "skill_name": "pirfl",
+  "purpose": "Test whether the description should trigger for robust plan-implement-review-fix workflows and not trigger for trivial requests.",
+  "queries": [
+    {"query": "Use a plan/implement/review/fix loop to update this feature safely.", "should_trigger": true},
+    {"query": "I have five related tasks; coordinate them with subagents and fix review findings before finalizing.", "should_trigger": true},
+    {"query": "Please do an adversarial review of this draft, fix the issues, then review again.", "should_trigger": true},
+    {"query": "Implement this data cleanup script and validate it carefully; mistakes would be costly.", "should_trigger": true},
+    {"query": "Create a polished report from these sources, with iterative critique and citation checks.", "should_trigger": true},
+    {"query": "Run PIRFL on this backlog of independent tasks.", "should_trigger": true},
+    {"query": "What is 2 + 2?", "should_trigger": false},
+    {"query": "Translate 'good morning' into French.", "should_trigger": false},
+    {"query": "Say thanks to Alex in one sentence.", "should_trigger": false},
+    {"query": "Make a quick haiku about rain.", "should_trigger": false},
+    {"query": "Summarize this one paragraph in a sentence.", "should_trigger": false},
+    {"query": "What does PIRFL stand for?", "should_trigger": false}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "skill_name": "pirfl",
+  "evals": [
+    {
+      "id": "multi-task-orchestration",
+      "prompt": "I need to update three independent README files, each with different audiences. Use subagents if helpful and make sure the final set is consistent.",
+      "expected_output": "The agent builds a task portfolio, runs separate or parallel PIRFL workflows for independent README updates, then performs an integration review for consistency.",
+      "assertions": [
+        "The response identifies that the tasks are independent but need integrated consistency review.",
+        "The response includes a plan before implementation.",
+        "The response includes review/fix or validation before finalization.",
+        "The response reports remaining assumptions or risks if any."
+      ]
+    },
+    {
+      "id": "review-fix-loop",
+      "prompt": "Here is a draft policy. Critique it, fix the problems, and loop until it is solid.",
+      "expected_output": "The agent performs a review using concrete issue records, fixes accepted blocker/major issues, re-reviews changed parts, and avoids claiming perfection.",
+      "assertions": [
+        "Review findings are stated as concrete failures against goals or context.",
+        "Fixes are tied back to review issues.",
+        "A re-review or verification step occurs after fixes.",
+        "The final answer avoids claiming certainty or perfection."
+      ]
+    },
+    {
+      "id": "trivial-skip",
+      "prompt": "What's the capital of Japan?",
+      "expected_output": "The agent answers directly without invoking a visible PIRFL workflow.",
+      "assertions": [
+        "The answer is direct and concise.",
+        "The response does not include a multi-step PIRFL plan.",
+        "The response does not invent a review loop for a trivial request."
+      ]
+    }
+  ]
+}
