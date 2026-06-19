@@ -1,7 +1,7 @@
 ---
 name: error-correction-loop
 description: Reviews and fixes an existing artifact through a fallibilist error-correction loop using independent critic subagents when available. Use when the user asks for iterative critique, validation, QA, reviewer subagents, or a review/fix loop on a draft, patch, plan, report, or file.
-license: MIT
+license: Unlicense OR CC0-1.0
 compatibility: Works in skills-compatible agents. Subagent steps are optional; simulate independent review passes when unavailable.
 metadata:
   version: "1.0.0-template"

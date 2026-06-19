@@ -1,7 +1,7 @@
 ---
 name: pirfl
 description: Runs a fallibilist plan-implement-review-fix loop (PIRFL) for complex tasks, coding, writing, research, document work, and multi-task projects. Use when the user wants robust execution, iterative critique, validation, subagent review, error correction, or review-and-fix loops. Do not use for trivial one-step requests.
-license: MIT
+license: Unlicense OR CC0-1.0
 compatibility: Works in skills-compatible agents. Subagent steps are optional; simulate independent review passes when no subagent tool exists.
 metadata:
   version: "1.0.0"

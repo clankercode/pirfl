@@ -51,4 +51,4 @@ python pirfl/scripts/new_pirfl_log.py "Refactor payment flow" --out pirfl-log.md
 
 ## License
 
-MIT. See `LICENSE`.
+Dual licensed under the Unlicense and CC0 1.0 Universal. See `LICENSE`.
